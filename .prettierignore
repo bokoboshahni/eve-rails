@@ -1,0 +1,5 @@
+demo/app/assets/builds/
+demo/config/database.yml
+demo/public/assets/
+coverage/
+doc/

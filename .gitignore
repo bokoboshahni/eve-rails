@@ -1,0 +1,39 @@
+# Ignore gem building artifacts.
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+.rspec_status
+.env
+
+# Ignore NPM modules.
+/node_modules/
+
+# Ignore all logfiles and tempfiles.
+/demo/log/*
+/demo/tmp/*
+!/demo/log/.keep
+!/demo/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+/demo/tmp/pids/*
+!/demo/tmp/pids/
+!/demo/tmp/pids/.keep
+
+# Ignore uploaded files in development.
+/demo/storage/*
+!/demo/storage/
+!/demo/storage/.keep
+!/demo/tmp/storage/
+!/demo/tmp/storage/.keep
+
+# Ignore compiled and bundled assets.
+/demo/app/assets/builds/
+/demo/public/assets/
+
+# Ignore master key for decrypting credentials and more.
+/demo/master.key

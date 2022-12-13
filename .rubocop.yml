@@ -1,0 +1,48 @@
+require:
+  - rubocop-faker
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-rspec
+  - rubocop-thread_safety
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2
+  Exclude:
+    - "bin/**/*"
+    - "demo/db/schema.rb"
+    - "demo/tmp/*"
+    - "demo/vendor/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+
+Lint/EmptyClass:
+  Enabled: false
+
+Metrics/AbcSize:
+  Exclude:
+    - "demo/db/migrate/*.rb"
+
+Metrics/BlockLength:
+  Exclude:
+    - "demo/db/migrate/*.rb"
+    - "spec/**/*_spec.rb"
+
+Metrics/ClassLength:
+  Exclude:
+    - "demo/db/migrate/*.rb"
+
+Naming/FileName:
+  Exclude:
+    - "lib/eve-rails.rb"
+
+Metrics/MethodLength:
+  Exclude:
+    - "demo/db/migrate/*.rb"
+
+Style/Documentation:
+  Exclude:
+    - "lib/ext/**/*.rb"
+    - "lib/generators/**/*.rb"
+    - "demo/**/*.rb"

@@ -1,0 +1,18 @@
+--load .yardext.rb
+--embed-mixins
+--markup markdown
+--markup-provider kramdown-parser-gfm
+--no-private
+--protected
+--title "EVE on Rails API"
+--exclude "lib\/ext"
+--exclude "lib\/generators"
+app/**/*.rb
+lib/**/*.rb
+-
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+LICENSE.txt
+README.md
+SECURITY.md

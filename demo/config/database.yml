@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: eve_rails_development
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
+
+test:
+  <<: *default
+  database: eve_rails_test
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

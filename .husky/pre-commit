@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+yarn lint-staged
+
+# bin/i18n-tasks health
+bin/brakeman -q --no-pager
+bin/bundle-audit -uq
+yarn audit
