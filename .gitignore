@@ -1,0 +1,39 @@
+# Ignore gem building artifacts.
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+.rspec_status
+.env
+
+# Ignore NPM modules.
+/node_modules/
+
+# Ignore all logfiles and tempfiles.
+/spec/dummy/log/*
+/spec/dummy/tmp/*
+!/spec/dummy/log/.keep
+!/spec/dummy/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+/spec/dummy/tmp/pids/*
+!/spec/dummy/tmp/pids/
+!/spec/dummy/tmp/pids/.keep
+
+# Ignore uploaded files in development.
+/spec/dummy/storage/*
+!/spec/dummy/storage/
+!/spec/dummy/storage/.keep
+!/spec/dummy/tmp/storage/
+!/spec/dummy/tmp/storage/.keep
+
+# Ignore compiled and bundled assets.
+/spec/dummy/app/assets/builds/
+/spec/dummy/public/assets/
+
+# Ignore master key for decrypting credentials and more.
+/spec/dummy/master.key
